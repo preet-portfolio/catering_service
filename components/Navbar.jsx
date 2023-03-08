@@ -28,12 +28,12 @@ const Navbar = () => {
               Menu
             </p>
           </Link>
-          <Link href="/about">
+          <Link href="/About">
             <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
               About
             </p>
           </Link>
-          <Link href="/contact">
+          <Link href="/Contact">
             <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
               Contact
             </p>
