@@ -1,45 +1,38 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-green-500 p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <Link href="/">
-          <p className="font-bold text-xl tracking-tight">Ottawa Bites</p>
-        </Link>
-      </div>
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
-          <Link href="/Menu">
-            <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
+    <nav className="relative container mx-auto p-6">
+      <div className="flex items-centter justify-between">
+        <div className="flex items-center space-x-20">
+          <img src="images/logo.svg" alt="" />
+          <div className="hidden space-x-8 font-bold lg:flex">
+            <a href="" className="text-gray-500 hover:text-gray-800">
               Menu
-            </p>
-          </Link>
-          <Link href="/About">
-            <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4">
-              About
-            </p>
-          </Link>
-          <Link href="/Contact">
-            <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white">
-              Contact
-            </p>
-          </Link>
+            </a>
+            <a href="" className="text-gray-500 hover:text-gray-800">
+              Pricing
+            </a>
+            <a href="" className="text-gray-500 hover:text-gray-800">
+              Resources
+            </a>
+          </div>
+        </div>
+        {/* Right Button Menu */}
+        <div className="hidden items-center space-x-6 font-bold text-gray-600 lg:flex">
+          <div className="hover:text-gray-800">Login</div>
+          <a
+            href=""
+            className="px-8 py-3 font-bold text-white bg-green-600 rounded-full hover:opacity-90"
+          >
+            Sign up
+          </a>
         </div>
       </div>
+      {/* Mobile Menu */}
     </nav>
   );
 };
