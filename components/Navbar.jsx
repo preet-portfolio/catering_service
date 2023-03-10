@@ -13,19 +13,19 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation Links */}
-        <div className="flex items-center space-x-6 font-semibold text-lg ">
+        <div className="flex items-center space-x-6 font-semibold text-lg p-2 ">
           <Link href="/Menu">
-            <div className="text-gray-700 hover:text-gold-500  hover:rounded-md  transition duration-300 ease-in-out">
+            <div className="text-gray-700 hover:text-yellow-500   hover:rounded-md  transition duration-300 ease-in-out">
               Menu
             </div>
           </Link>
           <Link href="/About">
-            <div className="text-gray-700 hover:text-gold-500 hover:bg-green-500 hover:rounded-md  transition duration-300 ease-in-out">
+            <div className="text-gray-700 hover:text-yellow-500  hover:rounded-md  transition duration-300 ease-in-out">
               About
             </div>
           </Link>
-          <Link href="/">
-            <div className="text-gray-700 hover:text-gold-500 hover:bg-green-500 hover:rounded-md  transition duration-300 ease-in-out">
+          <Link href="/Contact">
+            <div className="text-gray-700 hover:text-yellow-500  hover:rounded-md  transition duration-300 ease-in-out">
               Contact
             </div>
           </Link>
@@ -34,5 +34,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
